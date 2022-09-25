@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDen| History</title>
+
+    
+    <link rel="stylesheet" href="..\styles\povijest.css"> 
+</head>
+
+<body>
+
+
+    <header>
+        <h1>GameDen</h1>
+        
+        <a href="..\pages\povijest.html">HRV</a>
+
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="..\pages\homepage.html">HOMEPAGE</a></li>
+            <li><a href="#">HISTORY</a></li>
+            <li><a href="..\pages\location_worktime.html">LOCATION/WORKTIME</a></li>
+            <li><a href="..\pages\shopping_list.html">PRODUCTS</a></li>
+            <li><a href="..\pages\customer_support.html">SUPPORT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="image">
+
+            <aside>
+                <img src="..\images\development.png" alt="history_image">
+            </aside>
+
+        </section>
+
+        <section class="article">
+
+            
+
+            <article>
+
+                <h2>Historical development of GameDen company</h2>
+
+                <br>
+                <br>
+
+                <dl>
+                    <dt><em>2009.</em></dt>
+                        <dd>The company GameDen d.o.o Antarctica was founded, owned by the founder and director Pero Perić.</dd>
+                        <dd>Opening of the first branch of <abbr title="GameDen">GD</abbr> company</dd>
+                    
+                    <br>
+                        
+                    <dt><em>2011.</em></dt>
+                        <dd>
+                            Company <abbr title="GameDen">GD</abbr> is entering into contracts with other leading partners in its field.
+                        </dd>
+                        <dd>
+                            Obtaining of the necessary certificates for further expansion.
+                        </dd>
+                        <dd>
+                            Start of breaking into the market.
+                        </dd>
+
+                    <br>
+
+                    <dt><em>2014.</em></dt>
+                        <dd>
+                            The online GameDen website becomes active and fully functional.
+                        </dd>
+
+                    <br>
+
+                    <dt><em>2015.</em></dt>
+                        <dd>
+                            Expansion to the world market.
+                        </dd>
+
+
+
+                </dl>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="fb">
+            <a href="https://www.facebook.com/GameDen-100615282058418">GameDen Facebook page </a>
+        </div>
+
+       
+        <div>
+
+            <p >-----------------------------------------Date/Time: <span id="datetime"></span></p>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        </div>
+        
+
+    </footer>
+
+</body>
+
+</html>

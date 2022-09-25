@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDen| Proizvodi</title>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js">
+  </script>
+  <script src="..\javascript\shopping_list_print.js"></script>
+  <script src="..\javascript\shopping_list_add.js"></script>
+  <script src="..\javascript\add.js"></script>
+    
+    <link rel="stylesheet" href="..\styles\popis_za_kupnju.css">
+</head>
+
+<body>
+
+    
+
+    <header>
+        <h1>GameDen</h1>
+        
+        <a href="..\pages\shopping_list.html">ENGL</a>
+  
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="..\pages\index_pocetna.html">POČETNA</a></li>
+            <li><a href="..\pages\povijest.html">POVIJEST</a></li>
+            <li><a href="..\pages\lokacija_radnovrijeme.html">LOKACIJA/VRIJEME</a></li>
+            <li><a href="#">PROIZVODI</a></li>
+            <li><a href="..\pages\tehnička_podrška.html">PODRŠKA</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="article">
+
+            <h2>Proizvodi</h2>
+
+            <article>
+                <p>Ovdje možete pogledati našu ponudu i napraviti vlastiti popis za kupovinu.</p>
+            </article>
+
+        </section>
+
+        <section class="shopping_list">
+
+            <div id="content">
+                <h2>Izaberite proizvode:</h2>
+                <div class="wrapper">
+                    
+                    <div class="item" id="razer_headphones" data-cost="80"> Razer headphones <img src="..\images\razer_headphones.png" /><button id="item-razer_headphones-btn">Dodaj</button></div>
+                    <div class="item" id="asus_mouse" data-cost="160"> Asus mouse <img src="..\images\asus_mouse.png" /><button id="item-asus_mouse-btn">Doday</button></div>
+                    <div class="item" id="nitro_chair" data-cost="256"> Nitro chair <img src="..\images\nitro_chair.png" /><button id="item-nitro_chair-btn">Dodaj</button></div>
+                    <div class="item" id="razer_keypad" data-cost="105"> Razer keypad <img src="..\images\razer_keypaad.png" /><button  id="item-razer_keypad-btn">Dodaj</button></div>
+                    <div class="item" id="corsair_keyboard" data-cost="230"> Corsair keyboard <img src="..\images\corsair_keyboard.png" /><button  id="item-corsair_keyboard-btn">Dodaj</button></div>
+                    <div class="item" id="alienware_laptop" data-cost="2170"> Alienware laptop <img src="..\images\alienware_laptop.png" /><button  id="item-alienware_laptop-btn">Dodaj</button></div>
+                    <div class="item" id="apollo_computer" data-cost="1000"> Apollo computer <img src="..\images\apollo_computer.png" /><button  id="item-apollo_computer-btn">Dodaj</button></div>
+                </div>
+                
+
+
+        </section>
+
+        </section>
+
+                <section class="shopping_cart">
+
+                    <div class="cart" id="shopping_list_items">
+                        <h2 class="section-header">Košarica</h2>
+
+                        <table id="cart-table">
+                        <thead>
+                            <tr>
+                            <th>Proizvod:</th>
+                            <th>Cijena:</th>
+                            </tr>
+                        </thead>
+                        </table>
+
+                        <div class="cart-total" id="cartTotal">
+                            <strong class="cart-total-title">Ukupno:</strong>
+                            <span class="cart-total-price">$0</span>
+                        </div>
+                </div>
+            </div>
+
+            
+            <input type="button" onclick="printDiv('shopping_list_items')" value="Isprintaj popis za kupovinu" />
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="fb">
+            <a href="https://www.facebook.com/GameDen-100615282058418">GameDen Facebook stranica </a>
+        </div>
+
+       
+        <div>
+
+            <p >-----------------------------------------Datum/Vrijeme: <span id="datetime"></span></p>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        </div>
+        
+
+
+    </footer>
+
+</body>
+
+</html>

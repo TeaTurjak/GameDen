@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDen| Povijest</title>
+
+    
+    <link rel="stylesheet" href="..\styles\povijest.css"> 
+</head>
+
+<body>
+
+
+    <header>
+        <h1>GameDen</h1>
+        
+        <a href="..\pages\history.html">ENGL</a>
+
+        
+
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="..\pages\index_pocetna.html">POČETNA</a></li>
+            <li><a href="#">POVIJEST</a></li>
+            <li><a href="..\pages\lokacija_radnovrijeme.html">LOKACIJA/VRIJEME</a></li>
+            <li><a href="..\pages\popis_za_kupnju.html">PROIZVODI</a></li>
+            <li><a href="..\pages\tehnička_podrška.html">PODRŠKA</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="image">
+
+            <aside>
+                <img src="..\images\development.png" alt="history_image">
+            </aside>
+
+        </section>
+
+        <section class="article">
+
+            
+
+            <article>
+
+                <h2>Povijesni razvoj tvrtke GameDen</h2>
+
+                <br>
+                <br>
+
+                <dl>
+                    <dt><em>2009.</em></dt>
+                        <dd>Osnovana je tvrtka GameDen d.o.o Antarktika u vlasništvu osnivača i direktora Pere Perića.</dd>
+                        <dd>Otvorenje prve <abbr title="GameDen">GD</abbr> poslovnice.</dd>
+
+                    <br>
+                        
+                    <dt><em>2011.</em></dt>
+                        <dd>
+                            Tvrtka <abbr title="GameDen">GD</abbr> sklapa ugovore s drugim vodećim partnerima u svojem području.
+                        </dd>
+                        <dd>
+                            Dobitak potrebnih certifikata za daljnje proširenje. 
+                        </dd>
+                        <dd>
+                            Početak probijanja na tržište.
+                        </dd>
+
+                    <br>
+
+                    <dt><em>2014.</em></dt>
+                        <dd>Online web stranice GameDen postaje aktivna i potpuno funkcionalna. </dd>
+
+                    <br>
+
+                    <dt><em>2015.</em></dt>
+                        <dd>
+                            Proširenje na svjetsko tržište.
+                        </dd>
+
+                </dl>
+
+            </article>
+
+        </section>
+
+    
+    </main>
+
+    <footer>
+
+        <div class="fb">
+            <a href="https://www.facebook.com/GameDen-100615282058418">GameDen Facebook stranica </a>
+        </div>
+
+       
+        <div>
+
+            <p >-----------------------------------------Datum/Vrijeme: <span id="datetime"></span></p>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        </div>
+        
+
+    </footer>
+
+</body>
+
+</html>

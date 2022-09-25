@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDen| Tehnička podrška</title>
+
+    <link rel="stylesheet" href="..\styles\tehnicka_podrska.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>GameDen</h1>
+        
+        <a href="..\pages\customer_support.html">ENGL</a>
+        
+
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="..\pages\povijest.html">POČETNA</a></li>
+            <li><a href="..\pages\povijest.html">POVIJEST</a></li>
+            <li><a href="..\pages\lokacija_radnovrijeme.html">LOKACIJA/VRIJEME</a></li>
+            <li><a href="..\pages\popis_za_kupnju.html">PROIZVODI</a></li>
+            <li><a href="#">PODRŠKA</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="next">
+
+            <img src="..\images\customer_ser.png" alt="customer_service_image1">
+
+        </section>
+
+        <section class="article">
+
+            
+            <article>
+
+                <h2>Tehnička podrška</h2>
+
+                
+                <p>
+                    U slučaju bilo kakvih poteškoća, možete nas kontaktirati na navedenim kontaktima:  
+                </p>
+
+                <br>
+
+                <span>- e-mail kontakti:</span>
+                <ul> 
+                    <li>Direktor:</li> 
+                        <ol type="i">
+                            <li>pero.peric@gameden.com</li> 
+                        </ol>
+                    
+                    <li>Glavna poslovnica:</li> 
+                        <ol type="i">
+                            <li>headquaters@gameden.com</li> 
+                        </ol>
+                    <li>Služba za korisnike:</li> 
+                        <ol type="i">
+                            <li>customers@gameden.com</li> 
+                        </ol>
+                </ul>
+                <br>
+
+                <span>- telefonski brojevi:</span>
+                <ul> 
+                    <li>Direktor:</li> 
+                        <ol type="i">
+                            <li>0900-1000-1000</li> 
+                        </ol>
+                    
+                    <li>Glavna poslovnica:</li> 
+                        <ol type="i">
+                            <li>0900-1000-1001</li> 
+                        </ol>
+                    <li>Služba za korisnike:</li> 
+                        <ol type="i">
+                            <li>0900-1000-1002</li> 
+                        </ol>
+                </ul>
+            
+                <br>
+                
+                <p>
+                    Drugi način za kontaktiranje preko inboxa putem naše Facebook stranice GameDen (link se nalazi na dnu stranice).
+                </p>
+
+            </article>
+
+        </section>
+
+        <section class="support">
+
+            <aside>
+                <img src="..\images\customer-service.png" alt="customer_service_image">
+            </aside>
+
+            
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="fb">
+            <a href="https://www.facebook.com/GameDen-100615282058418">GameDen Facebook stranica </a>
+        </div>
+
+       
+        <div>
+
+            <p >-----------------------------------------Datum/Vrijeme: <span id="datetime"></span></p>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDen| Customer support</title>
+
+    <link rel="stylesheet" href="..\styles\tehnicka_podrska.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1>GameDen</h1>
+
+        <a href="..\pages\tehnička_podrška.html">HRV</a>
+ 
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="..\pages\homepage.html">HOMEPAGE</a></li>
+            <li><a href="..\pages\history.html">HISTORY</a></li>
+            <li><a href="..\pages\location_worktime.html">LOCATION/WORKTIME</a></li>
+            <li><a href="..\pages\shopping_list.html">PRODUCTS</a></li>
+            <li><a href="#">SUPPORT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="next">
+
+            <img src="..\images\customer_ser.png" alt="customer_service_image1">
+
+        </section>
+
+        <section class="article">
+
+           
+
+            <article>
+                
+                <h2>Customer support</h2>
+
+                <p>
+                    In case of any difficulties, you can contact us at the following contacts: 
+                </p>
+
+                <br>
+
+                <span>- e-mail contacts:</span>
+                <ul> 
+                    <li>Director:</li> 
+                        <ol type="i">
+                            <li>pero.peric@gameden.com</li> 
+                        </ol>
+                    
+                    <li>Headquaters:</li> 
+                        <ol type="i">
+                            <li>headquaters@gameden.com</li> 
+                        </ol>
+                    <li>Customer service:</li> 
+                        <ol type="i">
+                            <li>customers@gameden.com</li> 
+                        </ol>
+                </ul>
+                <br>
+
+                <span>- phone numbers:</span>
+                <ul> 
+                    <li>Director:</li> 
+                        <ol type="i">
+                            <li>0900-1000-1000</li> 
+                        </ol>
+                    
+                    <li>Headquaters:</li> 
+                        <ol type="i">
+                            <li>0900-1000-1001</li> 
+                        </ol>
+                    <li>Customer service:</li> 
+                        <ol type="i">
+                            <li>0900-1000-1002</li> 
+                        </ol>
+                </ul>
+
+                <br>
+                
+                <p>
+                    Another way to contact us is via inbox on our Facebook page GameDen (the link is at the bottom of the page).
+                </p>
+
+            </article>
+
+        </section>
+
+        <section class="support">
+
+            <aside>
+                <img src="..\images\customer-service.png" alt="customer_service_image">
+            </aside>
+
+            
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="fb">
+            <a href="https://www.facebook.com/GameDen-100615282058418">GameDen Facebook page </a>
+        </div>
+
+       
+        <div>
+
+            <p >Date/Time: <span id="datetime"></span></p>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        </div>
+        
+
+    </footer>
+
+</body>
+
+</html>

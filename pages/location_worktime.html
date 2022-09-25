@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDen| Location/Worktime</title>
+    <link rel="stylesheet" href="..\styles\lokacija_radno_vrijeme.css"> 
+
+
+
+<style>
+
+    th, td {
+        text-align: center;
+        padding: 8px;
+    }
+
+    th,td {
+        background-color: black;
+        color:cornflowerblue;
+    }
+</style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <h1>GameDen</h1>
+        
+        
+        <a href="..\pages\lokacija_radnovrijeme.html">HRV</a>
+ 
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="..\pages\homepage.html">HOMEPAGE</a></li>
+            <li><a href="..\pages\history.html">HISTORY</a></li>
+            <li><a href="#">LOCATION/WORKTIME</a></li>
+            <li><a href="..\pages\shopping_list.html">PRODUCTS</a></li>
+            <li><a href="..\pages\customer_support.html">SUPPORT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="image">
+
+            <img src="..\images\place1.png" width="600" height="500" alt="location_image">
+
+        </section>
+
+        <section class="article">
+
+            
+
+            <article>
+
+                <h2>Location</h2>
+
+                <br>
+
+                <p>
+                    Headquater of GameDen company is in Atlantic Ocean.
+                </p>
+
+            
+
+                <br>
+
+        
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=atlantic&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+                        </iframe>
+                        <a href="https://mcpenation.com/">Minecraft Website</a>
+                    </div>
+                    <style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}
+                    </style>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="aside">
+
+            
+
+            <aside>
+
+
+                <h2>Worktime</h2>
+
+                <br>
+
+                <table border="1px"> 
+                    <thead> 
+                        <tr> 
+                            <th>Day</th> 
+                            <th>Time</th> 
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td>Monday</td> 
+                            <td>7:30 - 19:30</td>
+                        <tr> 
+                            <td>Tuesday</td>
+                            <td>7:30 - 19:30</td>
+                        </tr> 
+                        <tr> 
+                            <td>Wednesday</td> 
+                            <td>7:30 - 19:30</td>
+                        </tr> 
+                        <tr> 
+                            <td>Thursday</td> 
+                            <td>7:30 - 19:30</td>
+                        </tr> 
+                        <tr> 
+                            <td>Friday</td>
+                            <td>7:30 - 19:30</td> 
+                        </tr>
+                        <tr> 
+                            <td>Saturday</td>
+                            <td>CLOSED</td>
+                        </tr>
+                        <tr> 
+                            <td>Sunday</td>  
+                            <td>CLOSED</td>
+                        </tr>
+                        <tr> 
+                            <td>Holidays</td> 
+                            <td>CLOSED</td>
+                        </tr>
+                    </tbody> 
+                </table>
+
+            </aside>
+
+
+        </section>
+
+
+    
+    </main>
+
+    <footer>
+
+        <div class="fb">
+            <a href="https://www.facebook.com/GameDen-100615282058418">GameDen Facebook page </a>
+        </div>
+
+       
+        <div>
+
+            <p >-----------------------------------------Date/Time: <span id="datetime"></span></p>
+
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
